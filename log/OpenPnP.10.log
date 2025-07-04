@@ -1,0 +1,11 @@
+2025-06-21 16:10:10.349 Configuration INFO: No packages.xml found in configuration directory, loading defaults.
+2025-06-21 16:10:10.479 Configuration INFO: No parts.xml found in configuration directory, loading defaults.
+2025-06-21 16:10:10.497 Configuration INFO: No boards.xml found in configuration directory, loading defaults.
+2025-06-21 16:10:10.500 Configuration INFO: No panels.xml found in configuration directory, loading defaults.
+2025-06-21 16:10:10.503 Configuration INFO: No vision-settings.xml found in configuration directory, loading defaults.
+2025-06-21 16:10:10.505 Configuration INFO: No machine.xml found in configuration directory, loading defaults.
+2025-06-21 16:10:11.274 Configuration INFO: Defaults were loaded. Saving to configuration directory.
+2025-06-21 16:10:19.178 Main INFO: Bienvenue, Bienvenido, Willkommen, Hello, Namaskar, Welkom, Bonjour to OpenPnP version 2025-02-02_20-41-38.e468422.
+2025-06-21 16:52:08.286 MainFrame INFO: Shutting down...
+2025-06-21 16:52:08.475 ReferenceMachine INFO: setHomed(false)
+2025-06-21 16:52:08.494 MainFrame INFO: Shutdown complete, exiting.

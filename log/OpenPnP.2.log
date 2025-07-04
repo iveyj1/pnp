@@ -1,0 +1,22 @@
+2025-07-03 17:12:51.512 Main INFO: Bienvenue, Bienvenido, Willkommen, Hello, Namaskar, Welkom, Bonjour to OpenPnP version 2025-02-02_20-41-38.e468422.
+2025-07-03 17:12:51.560 OpenPnpCaptureCamera WARNING: No camera found with ID USB HD Camera \\?\usb#vid_1e45&pid_8022&mi_00#6&3e6af13&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Bottom Vision
+2025-07-03 17:12:56.369 ReferenceCamera WARNING: Camera Heads Vision failed to return an image after 4 tries.
+2025-07-03 17:12:56.409 OpenPnpCaptureCamera WARNING: No camera found with ID USB HD Camera \\?\usb#vid_1e45&pid_8022&mi_00#6&3e6af13&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Bottom Vision
+2025-07-03 17:12:56.414 OpenPnpCaptureCamera WARNING: No camera found with ID USB HD Camera \\?\usb#vid_1e45&pid_8022&mi_00#6&3e6af13&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Bottom Vision
+2025-07-03 17:12:56.421 OpenPnpCaptureCamera WARNING: No camera found with ID USB HD Camera \\?\usb#vid_1e45&pid_8022&mi_00#6&3e6af13&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Bottom Vision
+2025-07-03 17:12:56.424 OpenPnpCaptureCamera WARNING: No camera found with ID USB HD Camera \\?\usb#vid_1e45&pid_8022&mi_00#6&3e6af13&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Bottom Vision
+2025-07-03 17:12:56.427 OpenPnpCaptureCamera WARNING: No camera found with ID USB HD Camera \\?\usb#vid_1e45&pid_8022&mi_00#6&3e6af13&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Bottom Vision
+2025-07-03 17:12:56.427 ReferenceCamera WARNING: Camera Bottom Vision failed to return an image after 4 tries.
+2025-07-03 17:18:10.875 GcodeDriver$ReaderThread ERROR: [PNPBOARDV1.7:ttyACM0] Read error: java.io.IOException: Read error.
+	at org.openpnp.machine.reference.driver.SerialPortCommunications.read(SerialPortCommunications.java:150)
+	at org.openpnp.machine.reference.driver.ReferenceDriverCommunications.readUntil(ReferenceDriverCommunications.java:108)
+	at org.openpnp.machine.reference.driver.ReferenceDriverCommunications.readLine(ReferenceDriverCommunications.java:86)
+	at org.openpnp.machine.reference.driver.GcodeDriver$ReaderThread.run(GcodeDriver.java:1487)
+2025-07-03 17:18:51.009 GcodeDriver$ReaderThread ERROR: [PNPBOARDV1.7:ttyACM0] Read error: java.io.IOException: Read error.
+	at org.openpnp.machine.reference.driver.SerialPortCommunications.read(SerialPortCommunications.java:150)
+	at org.openpnp.machine.reference.driver.ReferenceDriverCommunications.readUntil(ReferenceDriverCommunications.java:108)
+	at org.openpnp.machine.reference.driver.ReferenceDriverCommunications.readLine(ReferenceDriverCommunications.java:86)
+	at org.openpnp.machine.reference.driver.GcodeDriver$ReaderThread.run(GcodeDriver.java:1487)
+2025-07-03 17:19:01.003 MainFrame INFO: Shutting down...
+2025-07-03 17:19:01.313 ReferenceMachine INFO: setHomed(false)
+2025-07-03 17:19:01.492 MainFrame INFO: Shutdown complete, exiting.

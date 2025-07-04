@@ -1,0 +1,18 @@
+2025-07-03 16:50:24.645 Main INFO: Bienvenue, Bienvenido, Willkommen, Hello, Namaskar, Welkom, Bonjour to OpenPnP version 2025-02-02_20-41-38.e468422.
+2025-07-03 16:50:24.668 OpenPnpCaptureCamera WARNING: No camera found with ID Openpnp Heads Cmera \\?\usb#vid_0bda&pid_5844&mi_00#6&1a9e0dd6&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Heads Vision
+2025-07-03 16:50:24.671 OpenPnpCaptureCamera WARNING: No camera found with ID USB HD Camera \\?\usb#vid_1e45&pid_8022&mi_00#6&3e6af13&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Bottom Vision
+2025-07-03 16:50:29.062 OpenPnpCaptureCamera WARNING: No camera found with ID Openpnp Heads Cmera \\?\usb#vid_0bda&pid_5844&mi_00#6&1a9e0dd6&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Heads Vision
+2025-07-03 16:50:29.063 OpenPnpCaptureCamera WARNING: No camera found with ID Openpnp Heads Cmera \\?\usb#vid_0bda&pid_5844&mi_00#6&1a9e0dd6&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Heads Vision
+2025-07-03 16:50:29.063 OpenPnpCaptureCamera WARNING: No camera found with ID Openpnp Heads Cmera \\?\usb#vid_0bda&pid_5844&mi_00#6&1a9e0dd6&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Heads Vision
+2025-07-03 16:50:29.064 OpenPnpCaptureCamera WARNING: No camera found with ID Openpnp Heads Cmera \\?\usb#vid_0bda&pid_5844&mi_00#6&1a9e0dd6&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Heads Vision
+2025-07-03 16:50:29.064 OpenPnpCaptureCamera WARNING: No camera found with ID Openpnp Heads Cmera \\?\usb#vid_0bda&pid_5844&mi_00#6&1a9e0dd6&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Heads Vision
+2025-07-03 16:50:29.065 ReferenceCamera WARNING: Camera Heads Vision failed to return an image after 4 tries.
+2025-07-03 16:50:29.099 OpenPnpCaptureCamera WARNING: No camera found with ID USB HD Camera \\?\usb#vid_1e45&pid_8022&mi_00#6&3e6af13&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Bottom Vision
+2025-07-03 16:50:29.099 OpenPnpCaptureCamera WARNING: No camera found with ID USB HD Camera \\?\usb#vid_1e45&pid_8022&mi_00#6&3e6af13&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Bottom Vision
+2025-07-03 16:50:29.100 OpenPnpCaptureCamera WARNING: No camera found with ID USB HD Camera \\?\usb#vid_1e45&pid_8022&mi_00#6&3e6af13&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Bottom Vision
+2025-07-03 16:50:29.100 OpenPnpCaptureCamera WARNING: No camera found with ID USB HD Camera \\?\usb#vid_1e45&pid_8022&mi_00#6&3e6af13&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Bottom Vision
+2025-07-03 16:50:29.101 OpenPnpCaptureCamera WARNING: No camera found with ID USB HD Camera \\?\usb#vid_1e45&pid_8022&mi_00#6&3e6af13&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global for camera Bottom Vision
+2025-07-03 16:50:29.101 ReferenceCamera WARNING: Camera Bottom Vision failed to return an image after 4 tries.
+2025-07-03 16:52:53.352 MainFrame INFO: Shutting down...
+2025-07-03 16:52:53.794 ReferenceMachine INFO: setHomed(false)
+2025-07-03 16:52:53.803 MainFrame INFO: Shutdown complete, exiting.
