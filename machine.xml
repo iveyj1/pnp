@@ -15,7 +15,7 @@
             <jerk-per-second-3 value="7500.0" units="Millimeters"/>
             <resolution>0.012195</resolution>
          </axis>
-         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS167af3c07b600868" name="y" type="Y" driver-id="DRV167af3cd07c765c4" letter="Y" backlash-compensation-method="None" backlash-speed-factor="0.1" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="true" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS167af3c07b600868" name="y" type="Y" driver-id="DRV167af3cd07c765c4" letter="Y" backlash-compensation-method="None" backlash-speed-factor="0.1" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
             <home-coordinate value="0.0" units="Millimeters"/>
             <acceptable-tolerance value="0.025" units="Millimeters"/>
             <backlash-offset value="0.0" units="Millimeters"/>
@@ -92,8 +92,8 @@
                      <string>TIP167afaf214352658</string>
                      <string>TIP167afaf23c56e66c</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="-21.283" y="-58.0" z="0.0" rotation="0.0"/>
-                  <manual-nozzle-tip-change-location units="Millimeters" x="101.673" y="90.26800000000003" z="0.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="-21.1" y="-59.70000000000002" z="0.0" rotation="0.0"/>
+                  <manual-nozzle-tip-change-location units="Millimeters" x="59.29" y="-27.431999999999988" z="0.0" rotation="0.0"/>
                   <vacuum-actuator-name>N1 VAC_SW</vacuum-actuator-name>
                </nozzle>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS167af3c07b55c95c" axis-Y-id="AXS167af3c07b600868" axis-Z-id="AXS171f4d3c76729cc4" axis-rotation-id="AXS167af5a572b5c52c" id="NOZ167af5b19077ba3c" name="N2" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="false" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="TIP167b1fb118ef2958" changer-enabled="true" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="true" blow-off-closing-valve="true" version="200" limit-rotation="true">
@@ -122,11 +122,11 @@
             </actuators>
             <cameras>
                <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS167af3c07b55c95c" axis-Y-id="AXS167af3c07b600868" axis-Z-id="AXS167af3c07b63e320" axis-rotation-id="AXS167af3c07b64c5b0" id="CAM167af8ff3dfdc2c8" name="Heads Vision" looking="Down" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="FixedTime" settle-time-ms="600" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.8791532548774004" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT167af9ae9e1d63e8" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="top: top usb-0000:00:14.0-4.4" format-id="0" freeze-properties="false">
-                  <units-per-pixel units="Millimeters" x="0.03649635" y="0.03663004" z="0.0" rotation="0.0"/>
+                  <units-per-pixel units="Millimeters" x="0.03649635" y="0.03663004" z="-27.30000000000002" rotation="0.0"/>
                   <units-per-pixel-secondary units="Millimeters" x="0.05857200188828616" y="0.05775338550969376" z="0.0" rotation="0.0"/>
                   <camera-primary-z value="0.0" units="Millimeters"/>
                   <camera-secondary-z value="0.0" units="Millimeters"/>
-                  <default-z value="0.0" units="Millimeters"/>
+                  <default-z value="-27.30000000000002" units="Millimeters"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <roaming-radius value="0.0" units="Millimeters"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -163,7 +163,7 @@
                   <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
                   <brightness property="Brightness" value="0" auto="false"/>
                   <contrast property="Contrast" value="38" auto="false"/>
-                  <exposure property="Exposure" value="50" auto="false"/>
+                  <exposure property="Exposure" value="150" auto="false"/>
                   <focus property="Focus"/>
                   <gain property="Gain"/>
                   <gamma property="Gamma" value="400" auto="false"/>
@@ -179,10 +179,10 @@
             <soft-limits-enabled>false</soft-limits-enabled>
             <pump-actuator-name>VacuumPump</pump-actuator-name>
             <homing-fiducial-location units="Millimeters" x="10.0" y="10.0" z="0.0" rotation="0.0"/>
-            <calibration-primary-fiducial-location units="Millimeters" x="6.65" y="167.6" z="0.0" rotation="0.0"/>
-            <calibration-secondary-fiducial-location units="Millimeters" x="8.399322442929282" y="141.7135325961907" z="0.0" rotation="0.0"/>
+            <calibration-primary-fiducial-location units="Millimeters" x="10.0" y="10.0" z="-27.30000000000002" rotation="0.0"/>
+            <calibration-secondary-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <calibration-primary-fiducial-diameter value="1.0" units="Millimeters"/>
-            <calibration-secondary-fiducial-diameter value="1.2885840415422956" units="Millimeters"/>
+            <calibration-secondary-fiducial-diameter value="0.0" units="Millimeters"/>
          </head>
       </heads>
       <signalers/>
@@ -276,7 +276,7 @@
             <default-z value="-25.0" units="Millimeters"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
             <roaming-radius value="10.0" units="Millimeters"/>
-            <head-offsets units="Millimeters" x="97.816" y="116.78800000000001" z="-23.0" rotation="0.0"/>
+            <head-offsets units="Millimeters" x="100.983" y="-39.111999999999966" z="-23.0" rotation="0.0"/>
             <calibration enabled="true">
                <camera-matrix length="9">1414.0561546961505, 0.0, 663.2698189975259, 0.0, 1412.0012791513645, 352.4727448933688, 0.0, 0.0, 1.0</camera-matrix>
                <distortion-coefficients length="5">-0.4286501636759382, 0.13789162424281048, -9.927638766317247E-4, -0.005372835036579604, 0.19069221522381916</distortion-coefficients>
@@ -348,7 +348,7 @@
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <detected-firmware><![CDATA[FIRMWARE_NAME:Smoothieware, FIRMWARE_URL:http%3A//smoothieware.org, X-SOURCE_CODE_URL:https%3A//github.com/markmaker/Smoothieware/tree/feature/best-for-pnp, FIRMWARE_VERSION:feature/best-for-pnp-23a1f0db, X-FIRMWARE_BUILD_DATE:Feb 15 2021 20:34:17, X-SYSTEM_CLOCK:120MHz, X-AXES:5, X-PAXES:5, X-GRBL_MODE:0, X-CNC:0, X-MSD:1]]></detected-firmware>
-            <reported-axes><![CDATA[ok C: X:8.3993 Y:141.7135 Z:0.0000 A:0.0000 B:0.0000]]></reported-axes>
+            <reported-axes><![CDATA[ok C: X:202.0928 Y:207.1278 Z:0.0000 A:0.0000 B:0.0000]]></reported-axes>
             <command type="POSITION_REPORT_REGEX">
                <text><![CDATA[^.*X:(?<X>-?\d+\.\d+) Y:(?<Y>-?\d+\.\d+) Z:(?<Z>-?\d+\.\d+) A:(?<A>-?\d+\.\d+) B:(?<B>-?\d+\.\d+).*]]></text>
             </command>
@@ -1232,6 +1232,7 @@
             <string>947dd5a3c6e9e7e6b4479fc77c9f30c92e66fa31</string>
             <string>4cfccdb6189be00811d0ba64fcb2e25386f1eaac</string>
             <string>849d9de749d94cad0d03ae425c711847b6e40a21</string>
+            <string>2610dc43dedb9a0506738512da0f237b8422036c</string>
             <string>88cecb197dd4d95cf7e3ba2916536d19493c7968</string>
             <string>2c6634d57aa4395c82713c3479fbd17f5f6aa3e2</string>
             <string>cda0e6339e8851eedc18f8d263f2af912202584d</string>
