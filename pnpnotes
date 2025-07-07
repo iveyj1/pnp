@@ -1,0 +1,25 @@
+unpack and clean
+    Extrusions have some burrs - remove with a flat file
+    They also have cutting fluid residue - remove with mineral spirit/paint thinner
+    Compare lengths of nominally identical extrusions on a flat surface - should be 
+      well within 0.5mm of each other
+Early: "m5x50" should be "m5x45" (no m5x50 provided)
+Step 20 "20T synchronous wheel" should read "20T idler"
+End  assemblies - ensure all 4 bracket ends are collinear with straight edge
+
+Bearing was on the wrong side of rear bracket
+Ensure one synchronous sprocket grub screw aligns with the flat on the stepper motor
+Use m4x8 for the stepper motor mounting screws
+Rear shaft bearing has a spherical mount - after shaft is partially inserted, the shaft should
+be moved as necessary to allow the far end of the shaft to enter the motor adapter easily
+
+circular nuts?
+Remove the slides from the bag.  Wash down the rail and slides with mineral spirit  while moving slides, to remove the shipping grease.  When clean, wipe down with a clean rag and let dry.  When fully dry, apply a thin layer of white lithium grease to the rail, especially the side grooves, and work the slider back and forth.  
+
+After installing y rails, check for parallelism, should be less than 0.5mm difference in width between front and back. 
+
+Checking alignment
+Set up test board so that x translation of full length of scale results in no visible shift
+Check Y - move +50mm from scale origin, camera is over a point 0.2mm left of the y scale line
+perpendicularity error :w
+- 0.23 deg
