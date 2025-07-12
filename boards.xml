@@ -1,1 +1,3 @@
-<openpnp-boards/>
+<openpnp-boards>
+   <board>/home/user/pnp/boards/demo_board_v2_.board.xml</board>
+</openpnp-boards>
