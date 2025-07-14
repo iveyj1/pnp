@@ -375,18 +375,18 @@
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR167c2326e59793e0" name="AutoFeeder-Demo" enabled="true" part-id="R0402" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="0.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR167c2326e59793e0" name="AutoFeeder-Demo" enabled="false" part-id="R0402" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="0.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="124.006" y="4.184" z="-21.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR16b23f2b793a8214" name="ReferenceTrayFeeder" enabled="true" part-id="TQFP32-08" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="1" tray-count-y="1" feed-count="1">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR16b23f2b793a8214" name="ReferenceTrayFeeder" enabled="false" part-id="TQFP32-08" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="1" tray-count-y="1" feed-count="1">
             <location units="Millimeters" x="107.197" y="203.33" z="-22.0" rotation="0.0"/>
             <offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR16b2b01ea7a4a094" name="ReferenceTrayFeeder" enabled="true" part-id="TQFP100" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="1" tray-count-y="1" feed-count="1">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR16b2b01ea7a4a094" name="ReferenceTrayFeeder" enabled="false" part-id="TQFP100" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="1" tray-count-y="1" feed-count="1">
             <location units="Millimeters" x="126.076" y="224.245" z="-21.3" rotation="90.0"/>
             <offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1728d05aea4761fc" name="ReferenceDragFeeder" enabled="true" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1728d05aea4761fc" name="ReferenceDragFeeder" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <feed-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -399,16 +399,16 @@
             </vision>
             <backoff-distance value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR1766db384618e200" name="ReferenceAutoFeeder" enabled="true" part-id="R0805" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="21.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR1766db384618e200" name="ReferenceAutoFeeder" enabled="false" part-id="R0805" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="21.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="220.62" y="390.721" z="-21.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR1766dbbef3c0f920" name="ReferenceAutoFeeder" enabled="true" part-id="R1206" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="0.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="14.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR1766dbbef3c0f920" name="ReferenceAutoFeeder" enabled="false" part-id="R1206" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="0.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="14.0" move-before-feed="false">
             <location units="Millimeters" x="336.503" y="9.617" z="-21.1" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR1766de061192be2c" name="ReferenceAutoFeeder" enabled="true" part-id="REFERENCE_BOTTOM" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AF_A_8mmr" actuator-value="23.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR1766de061192be2c" name="ReferenceAutoFeeder" enabled="false" part-id="REFERENCE_BOTTOM" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AF_A_8mmr" actuator-value="23.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="318.718" y="360.906" z="-22.2" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR1766df7dd7c9a6f0" name="ReferenceTrayFeeder" enabled="true" part-id="TSSOP20" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="1" tray-count-y="1" feed-count="1">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR1766df7dd7c9a6f0" name="ReferenceTrayFeeder" enabled="false" part-id="TSSOP20" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="1" tray-count-y="1" feed-count="1">
             <location units="Millimeters" x="67.252" y="232.793" z="-22.5" rotation="90.0"/>
             <offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </feeder>
@@ -445,7 +445,7 @@
             <location units="Millimeters" x="90.553" y="7.632" z="-23.2" rotation="0.0"/>
             <offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17c85276a299fdf4" name="ReferenceAutoFeeder" enabled="true" part-id="R0603" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="19.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="19.0" move-before-feed="true">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17c85276a299fdf4" name="ReferenceAutoFeeder" enabled="false" part-id="R0603" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="19.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="19.0" move-before-feed="true">
             <location units="Millimeters" x="203.671" y="9.055" z="-21.7" rotation="0.0"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17cc6cd9015a51d8" name="ReferenceAutoFeeder" enabled="true" part-id="ELECTRO-SMD-E-7.8MM" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="21.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="21.0" move-before-feed="false">
@@ -456,6 +456,28 @@
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17cc747edefeacd0" name="ReferenceAutoFeeder" enabled="true" part-id="SOP16" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="0.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="23.0" move-before-feed="false">
             <location units="Millimeters" x="91.675" y="5.793" z="-23.0" rotation="0.0"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR1851f04674c51a0f" name="ReferenceStripFeeder" enabled="true" part-id="R0805" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="1" max-feed-count="0">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="90.0"/>
+            <reference-hole-location units="Millimeters" x="349.767" y="212.139" z="-21.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="349.755" y="208.141" z="0.0" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+            <pipeline>
+               <stages>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-option="Settle" count="1"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5" property-name="BlurGaussian"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="false" kernel-size="7"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
+                     <color r="255" g="0" b="0" a="255"/>
+                  </cv-stage>
+               </stages>
+            </pipeline>
          </feeder>
       </feeders>
       <cameras>
