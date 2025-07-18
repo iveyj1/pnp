@@ -217,7 +217,7 @@
             <soft-limit-high value="29.0" units="Millimeters"/>
             <safe-zone-low value="-7.0" units="Millimeters"/>
             <safe-zone-high value="7.0" units="Millimeters"/>
-            <feedrate-per-second value="3333.0" units="Millimeters"/>
+            <feedrate-per-second value="1000.0" units="Millimeters"/>
             <acceleration-per-second-2 value="3000.0" units="Millimeters"/>
             <jerk-per-second-3 value="0.0" units="Millimeters"/>
             <resolution>0.005939</resolution>
@@ -448,19 +448,85 @@
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17c85276a299fdf4" name="ReferenceAutoFeeder" enabled="false" part-id="R0603" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="19.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="19.0" move-before-feed="true">
             <location units="Millimeters" x="203.671" y="9.055" z="-21.7" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17cc6cd9015a51d8" name="ReferenceAutoFeeder" enabled="true" part-id="ELECTRO-SMD-E-7.8MM" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="21.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="21.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17cc6cd9015a51d8" name="ReferenceAutoFeeder" enabled="false" part-id="ELECTRO-SMD-E-7.8MM" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="21.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="21.0" move-before-feed="false">
             <location units="Millimeters" x="125.139" y="-0.809" z="-23.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17cc73f037fa8b68" name="ReferenceAutoFeeder" enabled="true" part-id="SOT223" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="0.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="22.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17cc73f037fa8b68" name="ReferenceAutoFeeder" enabled="false" part-id="SOT223" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="0.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="22.0" move-before-feed="false">
             <location units="Millimeters" x="63.169" y="-1.559" z="-23.0" rotation="90.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17cc747edefeacd0" name="ReferenceAutoFeeder" enabled="true" part-id="SOP16" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="0.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="23.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17cc747edefeacd0" name="ReferenceAutoFeeder" enabled="false" part-id="SOP16" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="ReferenceActuator" actuator-value="0.0" post-pick-actuator-name="MEGA_A_4mm" post-pick-actuator-value="23.0" move-before-feed="false">
             <location units="Millimeters" x="91.675" y="5.793" z="-23.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR1851f04674c51a0f" name="ReferenceStripFeeder" enabled="true" part-id="R0805" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="1" max-feed-count="0">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR1851f04674c51a0f" name="ReferenceStripFeeder" enabled="false" part-id="R0805" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="2" max-feed-count="0">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="90.0"/>
-            <reference-hole-location units="Millimeters" x="349.767" y="212.139" z="-21.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="349.767" y="212.139" z="-20.8" rotation="0.0"/>
             <last-hole-location units="Millimeters" x="349.755" y="208.141" z="0.0" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+            <pipeline>
+               <stages>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-option="Settle" count="1"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5" property-name="BlurGaussian"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="false" kernel-size="7"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
+                     <color r="255" g="0" b="0" a="255"/>
+                  </cv-stage>
+               </stages>
+            </pipeline>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR18524866db59beea" name="S8-1" enabled="false" part-id="R0805" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="4">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="213.949" y="211.06" z="-21.1" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="213.949" y="207.06" z="0.0" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+            <pipeline>
+               <stages>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-option="Settle" count="1"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5" property-name="BlurGaussian"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="false" kernel-size="7"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
+                     <color r="255" g="0" b="0" a="255"/>
+                  </cv-stage>
+               </stages>
+            </pipeline>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR185248b38e789f1e" name="S8-2" enabled="true" part-id="R0805" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="4">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="224.752" y="211.45" z="-21.1" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="224.752" y="207.45" z="0.0" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+            <pipeline>
+               <stages>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-option="Settle" count="1"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5" property-name="BlurGaussian"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="false" kernel-size="7"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
+                     <color r="255" g="0" b="0" a="255"/>
+                  </cv-stage>
+               </stages>
+            </pipeline>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR185248c5d63db698" name="S8-3" enabled="false" part-id="R0805" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="4">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="235.722" y="211.319" z="-21.1" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="235.722" y="207.319" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <tape-width value="8.0" units="Millimeters"/>
             <pipeline>
@@ -487,7 +553,7 @@
             <default-z value="-22.7" units="Millimeters"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
             <roaming-radius value="10.0" units="Millimeters"/>
-            <head-offsets units="Millimeters" x="102.504" y="121.723" z="-22.7" rotation="0.0"/>
+            <head-offsets units="Millimeters" x="103.249" y="120.022" z="-22.7" rotation="0.0"/>
             <calibration enabled="true">
                <camera-matrix length="9">1414.0561546961505, 0.0, 663.2698189975259, 0.0, 1412.0012791513645, 352.4727448933688, 0.0, 0.0, 1.0</camera-matrix>
                <distortion-coefficients length="5">-0.4286501636759382, 0.13789162424281048, -9.927638766317247E-4, -0.005372835036579604, 0.19069221522381916</distortion-coefficients>
@@ -536,7 +602,7 @@
             <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
             <brightness property="Brightness" value="0" auto="false"/>
             <contrast property="Contrast" value="38" auto="false"/>
-            <exposure property="Exposure" value="100" auto="false"/>
+            <exposure property="Exposure" value="50" auto="false"/>
             <focus property="Focus"/>
             <gain property="Gain"/>
             <gamma property="Gamma" value="400" auto="false"/>
@@ -574,7 +640,7 @@
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <detected-firmware><![CDATA[FIRMWARE_NAME:Smoothieware, FIRMWARE_URL:http%3A//smoothieware.org, X-SOURCE_CODE_URL:https%3A//github.com/markmaker/Smoothieware/tree/feature/best-for-pnp, FIRMWARE_VERSION:feature/best-for-pnp-23a1f0db, X-FIRMWARE_BUILD_DATE:Feb 15 2021 20:34:17, X-SYSTEM_CLOCK:120MHz, X-AXES:5, X-PAXES:5, X-GRBL_MODE:0, X-CNC:0, X-MSD:1]]></detected-firmware>
-            <reported-axes><![CDATA[ok C: X:29.6650 Y:313.9570 Z:-7.0000 A:0.0000 B:179.9929]]></reported-axes>
+            <reported-axes><![CDATA[ok C: X:210.7574 Y:273.5759 Z:7.0000 A:0.0195 B:-173.3079]]></reported-axes>
             <command type="POSITION_REPORT_REGEX">
                <text><![CDATA[^.*X:(?<X>-?\d+\.\d+) Y:(?<Y>-?\d+\.\d+) Z:(?<Z>-?\d+\.\d+) A:(?<A>-?\d+\.\d+) B:(?<B>-?\d+\.\d+).*]]></text>
             </command>
@@ -811,12 +877,12 @@
             <min-part-diameter value="1.5" units="Millimeters"/>
             <max-part-diameter value="20.0" units="Millimeters"/>
             <max-part-height value="6.9" units="Millimeters"/>
-            <max-pick-tolerance value="0.3" units="Millimeters"/>
-            <calibration angle-subdivisions="9" allow-misdetections="3" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="Manual" background-calibration-method="Brightness" background-min-hue="0" background-max-hue="255" background-tol-hue="8" background-min-saturation="0" background-max-saturation="255" background-tol-saturation="8" background-min-value="0" background-max-value="251" background-tol-value="8" background-diagnostics="&lt;html&gt;Background elements are too bright.&lt;br/&gt;Try to eliminate highlights and reflections.&lt;br/&gt;Use a shade behind the nozzle.&lt;br/&gt;Renew the blackening of dark parts of the nozzle tip.&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip.&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
+            <max-pick-tolerance value="1.0" units="Millimeters"/>
+            <calibration angle-subdivisions="9" allow-misdetections="3" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="Manual" background-calibration-method="Brightness" background-min-hue="0" background-max-hue="255" background-tol-hue="8" background-min-saturation="0" background-max-saturation="255" background-tol-saturation="8" background-min-value="0" background-max-value="182" background-tol-value="8" background-diagnostics="&lt;html&gt;Background elements are too bright.&lt;br/&gt;Try to eliminate highlights and reflections.&lt;br/&gt;Use a shade behind the nozzle.&lt;br/&gt;Renew the blackening of dark parts of the nozzle tip.&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip.&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
                <pipeline>
                   <stages>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="true" settle-option="Settle" count="1"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="1" enabled="true" diameter="40" property-name="MaskCircle"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="1" enabled="true" diameter="55" property-name="MaskCircle"/>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="2" enabled="true" conversion="Bgr2Gray"/>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="3" enabled="true" threshold="20" auto="false" invert="true"/>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="4" enabled="true" kernel-size="5"/>
@@ -829,12 +895,7 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="7" enabled="false" prefix="runoutCalibration" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap">
-                  <entry>
-                     <string>NOZ167af5b19077ba3c</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.11822222222222223" center-y="0.16194444444444445" radius="0.0204655087236748" phase-shift="119.85235966310414" units="Millimeters" peak-error="0.11454998658831242" rms-error="0.06418901796807887"/>
-                  </entry>
-               </runout-compensation-lookup>
+               <runout-compensation-lookup class="java.util.HashMap"/>
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
@@ -1438,7 +1499,7 @@
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
       </nozzle-tips>
-      <pnp-job-processor class="org.openpnp.machine.reference.ReferencePnpJobProcessor" job-order="PartHeight" max-vision-retries="3" stepping-to-next-motion="true" optimize-multiple-nozzles="true" allow-immediate-nozzle-tip-calibration="false" fiducial-level="1">
+      <pnp-job-processor class="org.openpnp.machine.reference.ReferencePnpJobProcessor" job-order="Part" max-vision-retries="3" stepping-to-next-motion="true" optimize-multiple-nozzles="true" allow-immediate-nozzle-tip-calibration="false" fiducial-level="1">
          <planner class="org.openpnp.machine.reference.ReferencePnpJobProcessor$SimplePnpJobPlanner" strategy="Minimize"/>
       </pnp-job-processor>
       <fiducial-locator class="org.openpnp.machine.reference.vision.ReferenceFiducialLocator" fiducial-vision-id="FVS_Default" enabled-averaging="false" repeat-fiducial-recognition="3">
@@ -1454,7 +1515,7 @@
       <park-after-homed>false</park-after-homed>
       <unsafe-Z-roaming-distance value="10.0" units="Millimeters"/>
       <pool-scripting-engines>false</pool-scripting-engines>
-      <auto-load-most-recent-job>false</auto-load-most-recent-job>
+      <auto-load-most-recent-job>true</auto-load-most-recent-job>
       <solutions show-indicator="true" target-milestone="Calibration">
          <dismissed-solutions class="java.util.HashSet">
             <string>8845c336facc1acc2f91bd42d8e7bccf450f91dc</string>
