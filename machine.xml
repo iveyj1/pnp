@@ -269,8 +269,8 @@
                      <string>TIP167afaf23c56e66c</string>
                      <string>TIP167afaf214352658</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="-21.165" y="-59.757" z="0.0" rotation="0.0"/>
-                  <manual-nozzle-tip-change-location units="Millimeters" x="30.0" y="5.0" z="-5.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="-21.2" y="-58.7" z="0.0" rotation="0.0"/>
+                  <manual-nozzle-tip-change-location units="Millimeters" x="29.965" y="6.056999999999995" z="-5.0" rotation="0.0"/>
                   <vacuum-actuator-name>N1 VAC_SW</vacuum-actuator-name>
                </nozzle>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS167af3c07b55c95c" axis-Y-id="AXS167af3c07b600868" axis-Z-id="AXS171f4d3c76729cc4" axis-rotation-id="AXS167af5a572b5c52c" id="NOZ167af5b19077ba3c" name="N2" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="TIP167afaf23c56e66c" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="true" blow-off-closing-valve="true" version="200" limit-rotation="true">
@@ -279,8 +279,8 @@
                      <string>TIP167afaf23c56e66c</string>
                      <string>TIP167afaf214352658</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="22.48299999999996" y="-59.46767916666663" z="0.06999999999998252" rotation="0.0"/>
-                  <manual-nozzle-tip-change-location units="Millimeters" x="30.0" y="5.0" z="-5.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="22.48299999999996" y="-59.46767916666663" z="0.0" rotation="0.0"/>
+                  <manual-nozzle-tip-change-location units="Millimeters" x="30.0" y="5.0" z="-5.0699999999999825" rotation="0.0"/>
                   <vacuum-actuator-name>N2 VAC_SW</vacuum-actuator-name>
                </nozzle>
             </nozzles>
@@ -299,7 +299,7 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS167af3c07b55c95c" axis-Y-id="AXS167af3c07b600868" axis-Z-id="AXS167af3c07b63e320" axis-rotation-id="AXS167af3c07b64c5b0" id="CAM167af8ff3dfdc2c8" name="Heads Vision" looking="Down" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="true" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Maximum" settle-time-ms="600" settle-timeout-ms="600" settle-threshold="8.0" settle-debounce="3" settle-full-color="false" settle-gaussian-blur="7" settle-gradients="false" settle-mask-circle="1.4142135623730951" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="10.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.4863221200602033" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT167af9ae9e1d63e8" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="top: top usb-0000:00:14.0-4.4" format-id="0" freeze-properties="false">
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS167af3c07b55c95c" axis-Y-id="AXS167af3c07b600868" axis-Z-id="AXS167af3c07b63e320" axis-rotation-id="AXS167af3c07b64c5b0" id="CAM167af8ff3dfdc2c8" name="Heads Vision" looking="Down" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="true" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Maximum" settle-time-ms="600" settle-timeout-ms="600" settle-threshold="8.0" settle-debounce="3" settle-full-color="false" settle-gaussian-blur="7" settle-gradients="false" settle-mask-circle="1.4142135623730951" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="10.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.4863221200602033" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT167af9ae9e1d63e8" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="top: top usb-0000:00:14.0-10.4" format-id="0" freeze-properties="false">
                   <units-per-pixel units="Millimeters" x="0.039" y="0.0394" z="-22.71000000000001" rotation="0.0"/>
                   <units-per-pixel-secondary units="Millimeters" x="0.0352" y="0.0349" z="-17.63000000000004" rotation="0.0"/>
                   <camera-primary-z value="0.0" units="Millimeters"/>
@@ -350,7 +350,7 @@
                   <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
                   <brightness property="Brightness" value="0" auto="false"/>
                   <contrast property="Contrast" value="38" auto="false"/>
-                  <exposure property="Exposure" value="200" auto="false"/>
+                  <exposure property="Exposure" value="50" auto="false"/>
                   <focus property="Focus"/>
                   <gain property="Gain"/>
                   <gamma property="Gamma" value="400" auto="false"/>
@@ -547,13 +547,13 @@
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM167af9f399731be0" name="Bottom Vision" looking="Up" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="80" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="9" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="5.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.10434084215391141" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT167afa0a8759c7d0" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="bottom: bottom usb-0000:00:14.0-2" format-id="0" freeze-properties="false">
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM167af9f399731be0" name="Bottom Vision" looking="Up" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="80" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="9" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="5.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.10434084215391141" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT167afa0a8759c7d0" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="bottom: bottom usb-0000:00:14.0-9" format-id="0" freeze-properties="false">
             <units-per-pixel units="Millimeters" x="0.028" y="0.0275" z="0.0" rotation="0.0"/>
             <camera-primary-z value="-22.879999999999995" units="Millimeters"/>
             <default-z value="-22.7" units="Millimeters"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
             <roaming-radius value="10.0" units="Millimeters"/>
-            <head-offsets units="Millimeters" x="103.249" y="120.022" z="-22.7" rotation="0.0"/>
+            <head-offsets units="Millimeters" x="103.214" y="121.07900000000001" z="-22.7" rotation="0.0"/>
             <calibration enabled="true">
                <camera-matrix length="9">1414.0561546961505, 0.0, 663.2698189975259, 0.0, 1412.0012791513645, 352.4727448933688, 0.0, 0.0, 1.0</camera-matrix>
                <distortion-coefficients length="5">-0.4286501636759382, 0.13789162424281048, -9.927638766317247E-4, -0.005372835036579604, 0.19069221522381916</distortion-coefficients>
@@ -602,7 +602,7 @@
             <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
             <brightness property="Brightness" value="0" auto="false"/>
             <contrast property="Contrast" value="38" auto="false"/>
-            <exposure property="Exposure" value="50" auto="false"/>
+            <exposure property="Exposure" value="150" auto="false"/>
             <focus property="Focus"/>
             <gain property="Gain"/>
             <gamma property="Gamma" value="400" auto="false"/>
@@ -640,7 +640,7 @@
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <detected-firmware><![CDATA[FIRMWARE_NAME:Smoothieware, FIRMWARE_URL:http%3A//smoothieware.org, X-SOURCE_CODE_URL:https%3A//github.com/markmaker/Smoothieware/tree/feature/best-for-pnp, FIRMWARE_VERSION:feature/best-for-pnp-23a1f0db, X-FIRMWARE_BUILD_DATE:Feb 15 2021 20:34:17, X-SYSTEM_CLOCK:120MHz, X-AXES:5, X-PAXES:5, X-GRBL_MODE:0, X-CNC:0, X-MSD:1]]></detected-firmware>
-            <reported-axes><![CDATA[ok C: X:210.7574 Y:273.5759 Z:7.0000 A:0.0195 B:-173.3079]]></reported-axes>
+            <reported-axes><![CDATA[ok C: X:24.9500 Y:10.0000 Z:-7.0000 A:179.9992 B:0.0000]]></reported-axes>
             <command type="POSITION_REPORT_REGEX">
                <text><![CDATA[^.*X:(?<X>-?\d+\.\d+) Y:(?<Y>-?\d+\.\d+) Z:(?<Z>-?\d+\.\d+) A:(?<A>-?\d+\.\d+) B:(?<B>-?\d+\.\d+).*]]></text>
             </command>
